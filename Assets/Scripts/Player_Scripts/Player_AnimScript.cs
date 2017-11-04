@@ -4,29 +4,30 @@ using UnityEngine;
 
 public class Player_AnimScript : MonoBehaviour {
 
+    public float speed = 2f;
+
     private Animator anim;
+    private Rigidbody rb;
 
 	void Start ()
     {
         anim = GetComponent <Animator> ();
-	}
-	
-	// Update is called once per frame
-	void Update ()
+        rb = GetComponent <Rigidbody> ();
+        anim.speed = speed;
+    }
+
+    // Update is called once per frame
+    void Update ()
     {
-        if (Input.GetKeyDown(KeyCode.Z))
+        float vaxe = Input.GetAxis("Vertical") * speed;
+        if (vaxe != 0f)
         {
-            anim.CrossFade("walk", 0.1f);
-        }
-            if (Input.GetKey(KeyCode.Z))
-        {
-            anim.SetFloat("isWalking", 1);
-            anim.SetFloat("isIdle", 0);
+            anim.SetBool("IsWalking", true);
+            Vector3 newPos = rb.position + new Vector3(0, 0, vaxe) * Time.deltaTime;
+            rb.MovePosition(newPos);
         }
         else
-        {
-            anim.SetFloat("isWalking", 0);
-            anim.SetFloat("isIdle", 1);
-        }
+            anim.SetBool("IsWalking", false);
+
 	}
 }
