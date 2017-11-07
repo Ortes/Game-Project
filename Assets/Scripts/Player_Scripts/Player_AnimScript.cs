@@ -1,8 +1,8 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using UnityEngine.Networking;
 using UnityEngine;
 
-public class Player_AnimScript : MonoBehaviour {
+public class Player_AnimScript : NetworkBehaviour
+{
 
     public float speed = 2.5f;
 
@@ -17,6 +17,9 @@ public class Player_AnimScript : MonoBehaviour {
     // Update is called once per frame
     void Update ()
     {
+        if (!isLocalPlayer)
+            return;
+            
         if (Input.GetAxis("Vertical") != 0f)
         {
             anim.SetBool("IsWalking", true);
