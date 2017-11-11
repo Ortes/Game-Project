@@ -4,20 +4,18 @@ using UnityEngine;
 
 public class EnemyMovementScript : MonoBehaviour
 {
-	Transform player;               // Reference to the player's position.
-	UnityEngine.AI.NavMeshAgent nav;               // Reference to the nav mesh agent.
+	GameObject player = null;
+	UnityEngine.AI.NavMeshAgent nav;
 
-
-	void Awake ()
+	void Awake()
 	{
-		// Set up the references.
-		player = GameObject.FindGameObjectWithTag ("Player").transform;
 		nav = GetComponent <UnityEngine.AI.NavMeshAgent> ();
 	}
 
-
-	void Update ()
+	void Update()
 	{
-		nav.SetDestination (player.position);
+        player = GameObject.FindGameObjectWithTag("Player");
+        if (player != null)
+            nav.SetDestination (player.transform.position);
 	} 
 }
