@@ -1,107 +1,88 @@
 fileFormatVersion: 2
-guid: fc7c7e24481623140ac3d0349dcd142a
-timeCreated: 1509564919
+guid: 36ec476d6173a664f8393760097a9a86
+timeCreated: 1510419451
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
-    100000: //RootNode
-    100002: foot_L
-    100004: foot_R
-    100006: forearm_L
-    100008: forearm_R
-    100010: hand_L
+    100000: foot_L
+    100002: foot_R
+    100004: forearm_L
+    100006: forearm_R
+    100008: hand_L
+    100010: hand_L_001
     100012: hand_R
-    100014: metarig
-    100016: pelvis_L
-    100018: pelvis_R
-    100020: shin_L
-    100022: shin_R
-    100024: shoulder_L
-    100026: shoulder_R
-    100028: Sphere
-    100030: spine
-    100032: spine_001
-    100034: spine_002
-    100036: spine_004
-    100038: spine_005
-    100040: thigh_L
-    100042: thigh_R
-    100044: thumb_01_L
-    100046: thumb_01_L_001
-    100048: thumb_01_R
-    100050: thumb_01_R_001
-    100052: toe_L
-    100054: toe_R
-    100056: upper_arm_L
-    100058: upper_arm_R
-    100060: spine_003
-    100062: leg_IK_L
-    100064: leg_IK_R
-    100066: pole_L
-    100068: pole_R
-    100070: Sphere_MeshPart0
-    100072: Sphere_MeshPart1
-    100074: Player
-    100076: hand_L_001
-    100078: hand_R_001
-    400000: //RootNode
-    400002: foot_L
-    400004: foot_R
-    400006: forearm_L
-    400008: forearm_R
-    400010: hand_L
+    100014: hand_R_001
+    100016: leg_IK_L
+    100018: leg_IK_R
+    100020: metarig
+    100022: pelvis_L
+    100024: pelvis_R
+    100026: Player
+    100028: pole_L
+    100030: pole_R
+    100032: shin_L
+    100034: shin_R
+    100036: shoulder_L
+    100038: shoulder_R
+    100040: spine
+    100042: spine_001
+    100044: spine_003
+    100046: spine_004
+    100048: spine_005
+    100050: thigh_L
+    100052: thigh_R
+    100054: thumb_01_L
+    100056: thumb_01_L_001
+    100058: thumb_01_R
+    100060: thumb_01_R_001
+    100062: toe_L
+    100064: toe_R
+    100066: //RootNode
+    100068: upper_arm_L
+    100070: upper_arm_R
+    400000: foot_L
+    400002: foot_R
+    400004: forearm_L
+    400006: forearm_R
+    400008: hand_L
+    400010: hand_L_001
     400012: hand_R
-    400014: metarig
-    400016: pelvis_L
-    400018: pelvis_R
-    400020: shin_L
-    400022: shin_R
-    400024: shoulder_L
-    400026: shoulder_R
-    400028: Sphere
-    400030: spine
-    400032: spine_001
-    400034: spine_002
-    400036: spine_004
-    400038: spine_005
-    400040: thigh_L
-    400042: thigh_R
-    400044: thumb_01_L
-    400046: thumb_01_L_001
-    400048: thumb_01_R
-    400050: thumb_01_R_001
-    400052: toe_L
-    400054: toe_R
-    400056: upper_arm_L
-    400058: upper_arm_R
-    400060: spine_003
-    400062: leg_IK_L
-    400064: leg_IK_R
-    400066: pole_L
-    400068: pole_R
-    400070: Sphere_MeshPart0
-    400072: Sphere_MeshPart1
-    400074: Player
-    400076: hand_L_001
-    400078: hand_R_001
-    2300000: //RootNode
-    2300002: Sphere
-    3300000: //RootNode
-    3300002: Sphere
-    4300000: Sphere
-    4300002: Sphere_MeshPart0
-    4300004: Sphere_MeshPart1
-    4300006: Player
+    400014: hand_R_001
+    400016: leg_IK_L
+    400018: leg_IK_R
+    400020: metarig
+    400022: pelvis_L
+    400024: pelvis_R
+    400026: Player
+    400028: pole_L
+    400030: pole_R
+    400032: shin_L
+    400034: shin_R
+    400036: shoulder_L
+    400038: shoulder_R
+    400040: spine
+    400042: spine_001
+    400044: spine_003
+    400046: spine_004
+    400048: spine_005
+    400050: thigh_L
+    400052: thigh_R
+    400054: thumb_01_L
+    400056: thumb_01_L_001
+    400058: thumb_01_R
+    400060: thumb_01_R_001
+    400062: toe_L
+    400064: toe_R
+    400066: //RootNode
+    400068: upper_arm_L
+    400070: upper_arm_R
+    4300000: Player
     7400000: Default Take
-    7400002: metarigAction_001
+    7400002: walk
     7400004: idle
-    7400006: walk
     9500000: //RootNode
-    13700000: Sphere
-    13700002: Sphere_MeshPart0
-    13700004: Sphere_MeshPart1
-    13700006: Player
+    13700000: Player
   externalObjects:
   - first:
       type: UnityEngine:Material
@@ -118,7 +99,7 @@ ModelImporter:
     bakeSimulation: 0
     resampleCurves: 1
     optimizeGameObjects: 0
-    motionNodeName: metarig/spine
+    motionNodeName: 
     rigImportErrors: 
     rigImportWarnings: 
     animationImportErrors: 
@@ -134,6 +115,34 @@ ModelImporter:
     extraExposedTransformPaths: []
     extraUserProperties: []
     clipAnimations:
+    - serializedVersion: 16
+      name: Default Take
+      takeName: Default Take
+      firstFrame: 0
+      lastFrame: 249
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: idle
       takeName: idle
